@@ -71,13 +71,13 @@ img {
   height: 72px;
   border: 0px;
   border-bottom: 1px solid #e7e9fc;
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 .header-navigation {
   margin-right: auto;
   display: flex;
   align-items: center;
-  margin-top: 24px;
-  margin-bottom: 24px;
 }
 .header > .container {
   display: flex;
@@ -223,16 +223,10 @@ img {
   width: 264px;
   height: 112px;
   gap: 24px;
-}
-.skills-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-}
-.skills-icon {
-  margin-top: 24px;
-  margin-left: 100px;
+  margin-bottom: 8px;
 }
 .about {
   padding-top: 0px;
@@ -293,9 +287,7 @@ img {
 .messenger-icon {
   fill: #ffffff;
 }
-.messenger-link:hover {
-  background-color: #404bbf;
-}
+.messenger-link:hover,
 .messenger-link:focus {
   background-color: #404bbf;
 }
@@ -326,7 +318,8 @@ img {
   width: 81px;
   height: 41px;
 }
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
   border-color: #404bbf;
   fill: #404bbf;
 }
@@ -335,10 +328,16 @@ img {
   padding-top: 100px;
   padding-bottom: 100px;
   border-style: 5 px dotted;
+}
+.footer-container {
   display: flex;
+}
+.footer-content {
+  max-width: 264px;
 }
 .footer-link {
   font-family: "Raleway", sans-serif;
+  font-style: normal;
   font-weight: 800;
   font-size: 18px;
   line-height: 1.16;
@@ -348,6 +347,7 @@ img {
   text-transform: uppercase;
   color: var(--background-color);
   margin-bottom: 16px;
+  text-transform: uppercase;
 }
 .footer-paragraph {
   font-size: 16px;
@@ -364,24 +364,22 @@ img {
   color: var(--link-color);
 }
 .footer-icon {
-  position: absolute;
-  left: 540px;
-  width: 208px;
-  height: 80px;
+  margin-left: 120px;
 }
 .footer-messenger-paragraph {
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
   color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-bottom: 16px;
 }
 .footer-messenger-list {
-  display: flex;
-  justify-content: center;
   gap: 16px;
+  padding-left: 100px;
 }
 .footer-messenger-item {
   width: 40px;
@@ -399,11 +397,9 @@ img {
 .footer-messenger-icon {
   fill: #ffffff;
 }
-.footer-messenger-link:hover {
-  background-color: #31d0aa;
-}
+.footer-messenger-link:hover,
 .footer-messenger-link:focus {
-  fill: #31d0aa;
+  background-color: #31d0aa;
 }
 .button-list .prev {
   font-family: inherit;
@@ -454,7 +450,6 @@ img {
   letter-spacing: 0.02em;
   color: var(--title-color);
 }
-
 .list-items {
   list-style: none;
   display: flex;
@@ -465,6 +460,10 @@ img {
   border: 0, 5px solid #e7e9fc;
   width: 360px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+.list-box:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .topic-item {
   padding: 32px 16px 32px 16px;
